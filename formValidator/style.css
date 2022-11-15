@@ -6,6 +6,7 @@
     --error-color: #e74c3c;
 }
 
+
 * {
     box-sizing: border-box;
 }
@@ -64,7 +65,7 @@ h2 {
 
 .form-control input:focus {
     outline: 0;
-    border-color: #777;
+    border-color: rgb(217, 188, 153);
 }
 
 .form-control.success input {
@@ -89,12 +90,12 @@ h2 {
 
 .form button {
     cursor: pointer;
-    background-color: #3498db;
-    border: 2px solid #3498db;
+    background-color: rgb(217, 188, 153);
+    border: 2px solid rgb(217, 188, 153);
     border-radius: 4px;
     color: #fff;
     display: block;
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px;
     margin-top: 20px;
     width: 100%;
