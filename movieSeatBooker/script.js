@@ -46,9 +46,15 @@ function populateUI() {
     if (selectedSeats !== null && selectedSeats.length > 0) {
         seats.forEach((seat, index) => {
             if (selectedSeats.indexOf(index) > -1) {
-                seats.classList.add('selected');
+                seat.classList.add('selected');
             }
         });
+    }
+
+    const selectedMovieIndex = localStorage.getItem('selectedMovieIndex');
+
+    if (selectedMovieIndex !== null) {
+        movieSelect.selectedIndex = selectedMovieIndex;
     }
 }
 
@@ -64,3 +70,6 @@ container.addEventListener('click', (e) => {
 
 
 });
+
+//Initial count and total set
+updateSelectedCount();
