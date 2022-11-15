@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #242333;
+    background-color: #837761;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -80,7 +80,7 @@ when we hover over to the element we want to chose other than the occupied seat
     background-color: rgba(0, 0, 0, 0.1);
     padding: 5px 10px;
     border-radius: 5px;
-    color: #777;
+    color: rgb(255, 255, 255);
     list-style-type: none;
     display: flex;
     justify-content: space-between;
