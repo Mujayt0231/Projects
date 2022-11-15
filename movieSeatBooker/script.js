@@ -14,6 +14,8 @@ const movieSelect = document.getElementById('movie');
 /* converting ticketPrice from String to int */
 let ticketPrice = +movieSelect.value;
 
+populateUI();
+
 //Save selected movie index and price
 
 function setMovieData(movieIndex, moviePrice) {
@@ -38,6 +40,17 @@ movieSelect.addEventListener('change', e => {
     updateSelectedCount();
 })
 
+//get data from localstorage and populate UI
+function populateUI() {
+    const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
+    if (selectedSeats !== null && selectedSeats.length > 0) {
+        seats.forEach((seat, index) => {
+            if (selectedSeats.indexOf(index) > -1) {
+                seats.classList.add('selected');
+            }
+        });
+    }
+}
 
 
 
