@@ -68,6 +68,7 @@ when we hover over to the element we want to chose other than the occupied seat
 */
 .seat:not(.occupied):hover {
     cursor: pointer;
+    transition: background-color 0.5s;
     transform: scale(1.2);
 }
 

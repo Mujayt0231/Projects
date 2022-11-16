@@ -7,13 +7,13 @@ The Document method querySelectorAll() returns a static (not live)
 NodeList representing a list of the document's elements that match the specified group of selectors.
 */
 const container = document.querySelector('.container');
-let ticketPrice = +movieSelect.value;
 const seats = document.querySelectorAll('.row .seat:not(.occupied)');
 const count = document.getElementById('count');
 const total = document.getElementById('total');
 const movieSelect = document.getElementById('movie');
 /* converting ticketPrice from String to int */
 
+let ticketPrice = +movieSelect.value;
 
 populateUI();
 
