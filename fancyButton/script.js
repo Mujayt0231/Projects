@@ -1,9 +1,6 @@
 
 const testData = 125;
 
-function calcTip(amount) {
-    if (amount < 300 && amount > 50) {
-        return [amount, '15%'];
-    }
-    else
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
